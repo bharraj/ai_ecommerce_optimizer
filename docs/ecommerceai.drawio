@@ -19,19 +19,19 @@
         <mxCell id="6" value="n8n: Error Handler" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="220" width="160" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="7" value="Store Raw Data ▶️ Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7" value="Store Raw Data Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="280" width="200" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="8" value="n8n: Trigger Model API" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="340" width="160" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="9" value="ML Model Service ▶️ Flask/FastAPI" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9" value="ML Model Service Flask/FastAPI" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="340" width="200" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="10" value="Receive Predictions & Designs" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="400" width="200" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="11" value="Store Results ▶️ Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="11" value="Store Results Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="460" width="200" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="12" value="n8n: Push to Downstream System" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">

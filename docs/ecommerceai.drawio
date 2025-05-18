@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2025-05-18T14:00:00.000Z" agent="5.0 (Windows)" etag="abcdef" version="14.6.13" type="device">
+  <diagram id="diagram1" name="Page-1">
+    <mxGraphModel dx="827" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Start: Receive Item Request" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="n8n: Fetch Product Data" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Data Valid?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="140" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="n8n: Clean & Transform" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="n8n: Error Handler" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="220" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Store Raw Data ▶️ Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="280" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="n8n: Trigger Model API" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="340" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="ML Model Service ▶️ Flask/FastAPI" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Receive Predictions & Designs" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Store Results ▶️ Database/S3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="460" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="n8n: Push to Downstream System" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="520" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="580" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="Yes" style="edgeLabel;html=1;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="140" y="170" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="No" style="edgeLabel;html=1;" edge="1" source="4" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="0" y="200" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="5" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="6" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="7" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="8" target="9" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="9" target="10" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="10" target="11" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="11" target="12" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" source="12" target="13" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
